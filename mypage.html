@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: #" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-honoka/dist/css/bootstrap.min.css">
+    <style>
+    </style>
+
+
+    <link rel='stylesheet' id='news-css'
+        href='https://test.ritoloco.net/wp-content/plugins/simple-news/css/news-min.css?ver=5.2.1' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='style-css'
+        href='https://test.ritoloco.net/wp-content/themes/ritoloco-glhf/style.css?ver=2.0.2' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='account-css'
+        href='https://test.ritoloco.net/wp-content/themes/ritoloco-glhf/css/account.css?ver=2.0.2' type='text/css'
+        media='all' />
+    <link rel='stylesheet' id='wpuf-css-css'
+        href='https://test.ritoloco.net/wp-content/plugins/wp-user-frontend/assets/css/frontend-forms.css?ver=5.2.1'
+        type='text/css' media='all' />
+
+
+</head>
+
+<body class="page-template-default page page-id-16 logged-in admin-bar no-customize-support wp-custom-logo">
+    <div id="overlay"></div>
+    <header id="site-header">
+        <div id="site-brand">
+            <a href="#" class="custom-logo-link" rel="home">
+                <img width="240" height="79" src="./img/cropped-ritoloco_green-1.png" class="custom-logo"
+                    alt="リトロコ【STG】" />
+            </a>
+            <a href="#" id="show-site-nav" aria-label="サイトナビゲーションを開く">
+                <i class="material-icons">menu</i>
+        </div>
+        <nav id="site-nav">
+            <h2 id="site-nav-header">リトロコ(※クーポンサイトプロトタイプ用)</h2>
+            <div
+                class="menu-%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc%ef%bc%88%e3%83%ad%e3%82%b0%e3%82%a4%e3%83%b3%e6%99%82%ef%bc%89-container">
+                <ul id="menu-%e3%83%a1%e3%82%a4%e3%83%b3%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc%ef%bc%88%e3%83%ad%e3%82%b0%e3%82%a4%e3%83%b3%e6%99%82%ef%bc%89"
+                    class="primary-menu">
+                    <li class="menu-item">
+                        <form role="search" method="get" class="search-form" action="#">
+                            <label>
+                                <span class="screen-reader-text">検索 :</span>
+                                <input type="search" class="search-field" id="search-field" placeholder="記事検索 …"
+                                    value="" name="s">
+                            </label>
+                            <button type="submit" class="search-submit" aria-label="記事を検索">
+                                <i class="material-icons" style="font-size: 13px;">search</i>
+                            </button>
+                        </form>
+                    </li>
+                    <li id="menu-item-12" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12">
+                        <a href="#">リトロコとは</a></li>
+                    <li id="menu-item-111"
+                        class="menu-item menu-item-type-custom menu-item-object-custom menu-item-111"><a
+                            href="#">新規投稿</a></li>
+                    <li id="menu-item-53" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-53">
+                        <a href="#">記事一覧</a></li>
+                    <li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11">
+                        <a href="#">離島一覧</a></li>
+                    <li id="menu-item-49"
+                        class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-16 current_page_item menu-item-49">
+                        <a href="#" aria-current="page">マイページ</a></li>
+                    <li id="menu-item-50" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50">
+                        <a href="#">ログアウト</a></li>
+                </ul>
+            </div>
+            <div id="site-nav-footer">
+                <a href="#" id="hide-site-nav">
+                    <i class="material-icons">arrow_right</i>&ensp;閉じる
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <article id="primary">
+            <section>
+                <h1>マイページ</h1>
+                <div class="entry-content">
+                    <div class="wpuf-dashboard-container">
+                        <nav class="wpuf-dashboard-navigation">
+                            <ul>
+                                <li class="current">
+                                    <a href="#">
+                                        <i class="material-icons">home</i>
+                                    </a>
+                                </li>
+                                <li class=""><a href="#">投稿</a></li>
+                                <li class=""><a href="#">アカウント</a>
+                                </li>
+                                <li class=""><a href="#">アイコン</a></li>
+                            </ul>
+                        </nav>
+                        <div class="wpuf-dashboard-content dashboard">
+                            <div id="user-area">
+                                <div class="img"><img
+                                        src="https://secure.gravatar.com/avatar/fe6b46949f04632d3f60e9027ab5339b?s=84&#038;d=mm&#038;r=g"
+                                        width="84" height="84" alt="アバター"
+                                        class="avatar avatar-84 wp-user-avatar wp-user-avatar-84 photo avatar-default" />
+                                </div>
+                                <h3 class="name" style="font-size: 1.17em;">PM Yosuke</h3>
+                                <table class="info-table">
+                                    <tr>
+                                        <th>投稿数</th>
+                                        <td>12</td>
+                                    </tr>
+                                    <tr>
+                                        <th>コメント数</th>
+                                        <td>2</td>
+                                    </tr>
+                                    <tr>
+                                        <th>獲得イイね数</th>
+                                        <td>11</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th>リトコイン数</th>
+                                        <td>410</td>
+                                    </tr>
+                                </table>
+                                <div class="write-to">
+                                    <b>書き込み対象の島</b>
+                                    <div>三宅島、魚島、与島、伊島、原島、小川島、二神島、佐久島</div>
+                                </div>
+                            </div>
+                            <div id="write-new">
+                                <a href="#" class="button">新規に投稿する</a>
+                            </div>
+
+                            <!-- 新規追加部分 -->
+                            <div class="row mt-4 ml-1 mr-1">
+                                <div class="col">
+                                    <h6>所有しているクーポン　一覧</h6>
+                                </div>
+                            </div>
+
+                            <div class="row ml-2 mr-2">
+                                <div class="col-6">
+                                    <div class="card mb-1" href="detail.html">
+                                        <img class="card-img-top"
+                                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title">肩たたき券</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card mb-1" href="detail.html">
+                                        <img class="card-img-top"
+                                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                            alt="Card image cap">
+                                        <div class=" card-body">
+                                            <h6 class="card-title">コーヒー１杯無料</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card mb-1" href="detail.html">
+                                        <img class="card-img-top"
+                                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title">平成の空気缶 100円引</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row mt-4 ml-1 mr-1">
+                                <div class="col">
+                                    <h6>発行したクーポン　一覧</h6>
+                                </div>
+                            </div>
+
+                            <div class="row ml-2 mr-2">
+                                <div class="col-6">
+                                    <div class="card mb-1 reg">
+                                        <img class="card-img-top"
+                                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                            alt="Card image cap">
+                                        <div class=" card-body">
+                                            <h6 class="card-title">映画鑑賞券</h6>
+                                            <span class="mce-btn">
+                                                <button type="button" class="btn btn-danger btn-block">
+                                                    <small>発行停止</small>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="card mb-1 reg">
+                                        <img class="card-img-top"
+                                            src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                                            alt="Card image cap">
+                                        <div class="card-body">
+                                            <h6 class="card-title">動物園ワンデーパス</h6>
+                                            <span class="mce-btn">
+                                                <button type="button" class="btn btn-danger btn-block">
+                                                    <small>発行停止</small>
+                                                </button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div><!-- .entry-content -->
+            </section>
+        </article><!-- .content-area -->
+
+        <aside id="secondary" class="sidebar widget-area" role="complementary">
+            <section id="hjemmesider_news_widget-2" class="widget widget_hjemmesider_news_widget">
+                <h2 class="widget-title">お知らせ</h2>
+                <ul class="news__list">
+                    <li><a href="#">
+                            <div class="sumple-news-text-con">
+                                <h4 style="font-size: 1em;">ステージングオープン</h4>
+                                <div class="simple_news_date">2019年2月19日</div>
+                                <p>ステージングサイトがオープンしたよ</p>
+                            </div>
+                        </a></li>
+                </ul>
+
+                <p class="footer__link"><a href="#">More News</a></p>
+
+            </section>
+            <section id="custom_html-3" class="widget_text widget widget_custom_html">
+                <div class="textwidget custom-html-widget">
+                    <div
+                        style="height:300px;min-width: 300px;background:rgb(84,110,122);color:white;text-align:center;vertical-align:middle;display:table-cell;">
+                        <div style="font-size:42px;">
+                            (´・ω・｀)
+                        </div>
+                        <div style="font-size: 24px;">
+                            ダミーのバナーだよ
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="tag_cloud-2" class="widget widget_tag_cloud">
+                <h2 class="widget-title">離島</h2>
+                <div class="tagcloud"><a href="#" class="tag-cloud-link tag-link-386 tag-link-position-1"
+                        style="font-size: 22pt;" aria-label="三宅島 (4個の項目)">三宅島</a>
+                    <a href="#" class="tag-cloud-link tag-link-473 tag-link-position-2" style="font-size: 8pt;"
+                        aria-label="与島 (1個の項目)">与島</a>
+                    <a href="#" class="tag-cloud-link tag-link-493 tag-link-position-3" style="font-size: 8pt;"
+                        aria-label="二神島 (1個の項目)">二神島</a>
+                    <a href="#" class="tag-cloud-link tag-link-460 tag-link-position-4" style="font-size: 8pt;"
+                        aria-label="伊島 (1個の項目)">伊島</a>
+                    <a href="#" class="tag-cloud-link tag-link-395 tag-link-position-5" style="font-size: 8pt;"
+                        aria-label="佐久島 (1個の項目)">佐久島</a>
+                    <a href="#" class="tag-cloud-link tag-link-551 tag-link-position-6" style="font-size: 8pt;"
+                        aria-label="原島 (1個の項目)">原島</a>
+                    <a href="#" class="tag-cloud-link tag-link-487 tag-link-position-7" style="font-size: 8pt;"
+                        aria-label="安居島 (1個の項目)">安居島</a>
+                    <a href="#" class="tag-cloud-link tag-link-527 tag-link-position-8" style="font-size: 8pt;"
+                        aria-label="小川島 (1個の項目)">小川島</a>
+                    <a href="#" class="tag-cloud-link tag-link-374 tag-link-position-9" style="font-size: 8pt;"
+                        aria-label="粟島(新潟県） (1個の項目)">粟島(新潟県）</a>
+                    <a href="#" class="tag-cloud-link tag-link-387 tag-link-position-10" style="font-size: 8pt;"
+                        aria-label="青ヶ島 (1個の項目)">青ヶ島</a>
+                    <a href="#" class="tag-cloud-link tag-link-514 tag-link-position-11" style="font-size: 8pt;"
+                        aria-label="魚島 (1個の項目)">魚島</a></div>
+            </section>
+            <section id="categories-2" class="widget widget_categories">
+                <h2 class="widget-title">カテゴリー</h2>
+                <ul>
+                    <li class="cat-item cat-item-262"><a href="#">イベント</a>
+                        (1)
+                    </li>
+                    <li class="cat-item cat-item-1"><a href="#">未分類</a> (13)
+                    </li>
+                    <li class="cat-item cat-item-269"><a href="#">移住</a> (1)
+                    </li>
+                </ul>
+            </section>
+        </aside><!-- .sidebar .widget-area -->
+    </main>
+    <footer id="site-footer">
+        <div id="footer-inner">
+            <div class="common-footer">
+                <div id="custom_html-2" class="widget_text widget widget_custom_html">
+                    <div class="textwidget custom-html-widget">
+                        <div>
+                            <dl>
+                                <dt><a href="#">リトロコ</a></dt>
+                                <dd>地元の人と旅人が離島を一緒に盛り上げるメディアサイト</dd>
+                            </dl>
+                        </div>
+                        <br>
+                        <div>
+                            <dl>
+                                <dt><a href='#'>お問い合わせ</a></dt>
+                                <dt><a href='#'>運営会社</a></dt>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-info">© 1932-2019 <a href="#">PRESSMAN Co.,Ltd</a> All rights
+                reserved.</div>
+        </div><!-- .footer-inner -->
+    </footer>
+
+    <div class="modal fade" id="cupon-modal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false"
+        data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img style="width: 100%;"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                    <h5>コーヒー１杯無料</h5>
+                    <p> ブレンドコーヒー(280円)を1杯サービスいたします。</p>
+                    <p>島で採れたフルーツをふんだんに使ったスイーツをご用意しております。</p>
+                    <p>美しい海が見られる展望デッキもございますので、ぜひ当カフェでゆっくりとした時間をお楽しみください！</p>
+                    <hr style="border: dashed">
+                    <p>
+                        クーポンを使用するにはこの画面を発行者に見せ、発行者に下の「使う」ボタンを押してもらってください。
+                    </p>
+
+                    <span class="mce-btn">
+                        <button type="button" class="btn btn-success btn-block mb-4" id="use">
+                            <span class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                            <span>使う</span>
+                        </button>
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <span class="mce-btn">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="cupon-cancel">
+                            <span class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                            <span>閉じる</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="complete-modal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false"
+        data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">クーポン使用　完了</h5>
+                </div>
+                <div class="modal-body">
+                    <p>クーポンを使用しました。</p>
+                </div>
+                <div class="modal-footer">
+                    <span class="mce-btn">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">
+                            OK
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false"
+        data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    クーポン発行停止
+                </div>
+                <div class="modal-body">
+                    <img style="width: 100%;"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E">
+                    <h5>動物園ワンデーパス</h5>
+                    <hr style="border: dashed">
+                    <p>
+                        このクーポンの発行を停止します。<br>
+                        よろしいですか？
+                    </p>
+                    <p class="alert alert-danger">
+                        ※ 発行を停止しても本クーポンを所有しているユーザーから剥奪されることはありません。従って、利用期限まではクーポンが使用されることがありますのでご注意ください。
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <span class="mce-btn">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal" id="delete-cancel">
+                            <span class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                            <span>閉じる</span>
+                        </button>
+                        <button type="button" class="btn btn-danger" id="delete">
+                            <span class="spinner-border spinner-border-sm d-none" role="status"
+                                aria-hidden="true"></span>
+                            <span>発行停止</span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap-honoka/dist/js/bootstrap.min.js"></script>
+
+    <script type='text/javascript'
+        src='https://test.ritoloco.net/wp-content/themes/ritoloco-glhf/js/common.js?ver=2.0.2'></script>
+    <script type='text/javascript'
+        src='https://test.ritoloco.net/wp-content/themes/ritoloco-glhf/js/fix-footer.js?ver=2.0.2'></script>
+    <script type='text/javascript'
+        src='https://test.ritoloco.net/wp-includes/js/jquery/ui/position.min.js?ver=1.11.4'></script>
+    <script>
+        $(function () {
+            $('div.card:not(.reg)').on('click', function () {
+                $('#cupon-modal').modal('show');
+            });
+
+            $('#use').on('click', function () {
+                var $btn = $('#use, #cupon-cancel');
+
+                $btn.children('span:nth-of-type(1)').removeClass('d-none');
+                $btn.children('span:nth-of-type(2)').addClass('d-none');
+                $btn.prop('disabled', true);
+
+                setTimeout(function () {
+                    $btn.children('span:nth-of-type(1)').addClass('d-none');
+                    $btn.children('span:nth-of-type(2)').removeClass('d-none');
+                    $btn.prop('disabled', false);
+
+                    $('#cupon-modal').modal('hide');
+                    $('#complete-modal').modal('show');
+                }, 1000);
+            });
+
+            $('#complete-modal').on('hidden.bs.modal', function () {
+                location.reload();
+            });
+
+            $('div.card.reg .btn.btn-danger').on('click', function() {
+                $('#delete-modal').modal('show');
+            });
+
+            $('#delete').on('click', function () {
+                var $btn = $('#delete, #delete-cancel');
+
+                $btn.children('span:nth-of-type(1)').removeClass('d-none');
+                $btn.children('span:nth-of-type(2)').addClass('d-none');
+                $btn.prop('disabled', true);
+
+                setTimeout(function () {
+                    $btn.children('span:nth-of-type(1)').addClass('d-none');
+                    $btn.children('span:nth-of-type(2)').removeClass('d-none');
+                    $btn.prop('disabled', false);
+
+                    $('#delete-modal').modal('hide');
+                    location.href='mypage.html';
+                }, 1000);
+            });
+
+        });
+    </script>
+</body>
+
+</html>

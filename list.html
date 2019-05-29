@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Material Design for Bootstrap fonts and icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+
+    <!-- Material Design for Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap-honoka/dist/css/bootstrap.min.css">
+
+    <title>Hello, world!</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">リトロコ　クーポン市場</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-header"
+            aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-header">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">TOP</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-3 mb-4">
+        <div class="row">
+            <div class="col">
+                <h3>クーポン一覧</h3>
+            </div>
+        </div>
+
+        <form>
+            <div class="form-row aligin-items-center">
+                <div class="col input-group">
+                    <input type="search" class="form-control" placeholder="島タグ">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">島タグで検索</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <form>
+            <div class="form-row aligin-items-center mt-2">
+                <div class="col input-group">
+                    <input type="search" class="form-control" placeholder="カテゴリー">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-primary">カテゴリーで検索</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <div class="row mt-2">
+            <div class="col">
+                <label>ソート順：</label>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        <input type="radio" name="options" id="option1" autocomplete="off"
+                            onChange="location.href='list.html'" checked> 人気順
+                    </label>
+                    <label class="btn btn-secondary">
+                        <input type="radio" name="options" id="option3" autocomplete="off"
+                            onChange="location.href='list.html'"> 新着順
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">肩たたき券</h6>
+                        <small class="card-text">
+                            10 ｺｲﾝ
+                            <br>
+                            肩をたたきます。
+                        </small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class=" card-body">
+                        <h6 class="card-title">コーヒー１杯無料</h6>
+                        <small class="card-text">
+                            500 ｺｲﾝ
+                            <br>
+                            ブレンドコーヒー(280円)を1杯サービ...
+                        </small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">平成の空気缶 100円引</h6>
+                        <small class="card-text">
+                            1000 ｺｲﾝ
+                            <br>
+                            「平成の空気」を未来へ届け、いつまでも大...
+                        </small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">宿泊代３割引</h6>
+                        <small class="card-text">
+                            3000 ｺｲﾝ
+                            <br>
+                            １泊２日￥7000を３割引いたします
+                        </small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">映画鑑賞券</h6>
+                        <small class="card-text">
+                            700 ｺｲﾝ
+                            <br>
+                            気軽に手軽に映画鑑賞へ。イオンシネマ映画...
+                        </small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">水族館入場券</h6>
+                        <small class="card-text">
+                            500 ｺｲﾝ
+                            心を癒やす水族館ーー。通常価格　大人35...
+                        </small>
+                    </div>
+                </a>
+            </div>
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">スパ入場券</h6>
+                        <small class="card-text">
+                            1000 ｺｲﾝ
+                            <br>
+                            温泉・プールで気分リフレッシュ。スパリゾ...
+                        </small>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-6">
+                <a class="card mb-1" href="detail.html">
+                    <img class="card-img-top"
+                        src="data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%22288%22%20height%3D%22180%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20288%20180%22%20preserveAspectRatio%3D%22none%22%3E%3Cdefs%3E%3Cstyle%20type%3D%22text%2Fcss%22%3E%23holder_16afed0bdee%20text%20%7B%20fill%3Argba(255%2C255%2C255%2C.75)%3Bfont-weight%3Anormal%3Bfont-family%3AHelvetica%2C%20monospace%3Bfont-size%3A14pt%20%7D%20%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22holder_16afed0bdee%22%3E%3Crect%20width%3D%22288%22%20height%3D%22180%22%20fill%3D%22%23777%22%3E%3C%2Frect%3E%3Cg%3E%3Ctext%20x%3D%22107.390625%22%20y%3D%2296.3%22%3Eがぞう%3C%2Ftext%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E"
+                        alt="Card image cap">
+                    <div class="card-body">
+                        <h6 class="card-title">動物園ワンデーパス</h6>
+                        <small class="card-text">
+                            1200 ｺｲﾝ
+                            <br>
+                            動物園と遊園地の両方が楽しめる。入園＋の...
+                        </small>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center mt-4">
+            <div class="col text-right">
+                <a href="list.html">さらに見る&nbsp;&gt;</a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-center">
+        <small style="color: #fff;">© 1932-2019 PRESSMAN Co.,Ltd All rights reserved.</small>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"
+        integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U"
+        crossorigin="anonymous"></script>
+    <script src="node_modules/bootstrap-honoka/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
